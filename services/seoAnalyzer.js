@@ -4,7 +4,8 @@ import { promises as fs } from 'fs';
 export async function analyzeSEO(url) {
   try {
     const rawhtml = await (await globalThis.fetch(url)).text();
-    const { document } = (await JSDOM.from(rawhtml));
+    const dom = new JSDOM(rawhtml);
+  const { document } = dom.window;
     const title = document.querySelector('title')?.textContent?.trim() || 'No title found';
     const metaDescription = document.querySelector('meta[name="description"]')?.getAttribute('content') || 'No meta description';
     const headings = Array.from(document.querySelectorAll('h1, h2, h3, h4, h5, h6')).map(h => h.textContent.trim());
