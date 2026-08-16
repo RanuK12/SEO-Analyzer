@@ -21,26 +21,37 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/RanuK12/SEO-Analyzer.git"
+    "url": "git+https://github.com/RanuK12/SEO-Analyzer.git"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "firecrawl-js": "^0.0.11",
-    "puppeteer": "^21.1.1",
-    "axios": "^1.5.0",
-    "cheerio": "^1.0.0-rc.12",
-    "html-minifier": "^4.0.0",
-    "winston": "^3.10.0",
+    "@rumenx/seo": "^1.1.2",
+    "axios": "^1.19.0",
+    "cheerio": "^1.2.0",
     "cors": "^2.8.5",
-    "helmet": "^7.0.0",
     "dotenv": "^16.3.1",
-    "validator": "^13.11.0",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "html-minifier": "^4.0.0",
+    "jsdom": "^30.0.1",
+    "lodash": "^4.17.21",
     "moment": "^2.29.4",
-    "lodash": "^4.17.21"
+    "puppeteer": "^21.1.1",
+    "seo-analyzer": "^3.2.0",
+    "trafilatura": "^0.2.0",
+    "undici": "^8.10.0",
+    "validator": "^13.11.0",
+    "winston": "^3.10.0"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1",
     "jest": "^29.6.2",
+    "nodemon": "^3.0.1",
     "supertest": "^6.3.3"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "bugs": {
+    "url": "https://github.com/RanuK12/SEO-Analyzer/issues"
+  },
+  "homepage": "https://github.com/RanuK12/SEO-Analyzer#readme"
 }
