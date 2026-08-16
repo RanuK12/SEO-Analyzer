@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Audit Report - example.com</title>
+    <style>
+        body{font-family:Arial,sans-serif;line-height:1.6;color:#333;max-width:1000px;margin:0 auto;padding:20px}
+        header{background:#2c3e50;color:#fff;padding:20px;border-radius:5px;margin-bottom:30px}
+        h1,h2,h3{color:#2c3e50}
+        .section{background:#f9f9f9;padding:20px;border-radius:5px;margin-bottom:20px;box-shadow:0 2px 5px rgba(0,0,0,0.1)}
+        .recommendation{background:#fff8e1;border-left:4px solid #ffc107;padding:15px;margin:15px 0}
+        .good{color:#27ae60}.critical{color:#e74c3c}
+        table{width:100%;border-collapse:collapse;margin:15px 0}
+        th,td{padding:10px;text-align:left;border-bottom:1px solid #ddd}
+        th{background:#f2f2f2}
+    </style>
+</head>
+<body>
+<header>
+    <h1>SEO Audit Report</h1>
+    <p>Website: <a href="https://example.com" target="_blank">https://example.com</a></p>
+    <p>Audit Date: <span id="date"></span></p>
+</header>
+<div class="section">
+    <h2>1. Basic SEO Information</h2>
+    <table>
+        <tr><th>Metric</th><th>Value</th><th>Status</th></tr>
+        <tr><td>Page Title</td><td>"Example Domain"</td><td class="good">✓ Good</td></tr>
+        <tr><td>Meta Description</td><td>"No meta description"</td><td class="critical">✗ Missing</td></tr>
+    </table>
+</div>
+<div class="section">
+    <h2>2. Content Analysis</h2>
+    <h3>Headings Structure</h3>
+    <ul><li><strong>H1:</strong> Example Domain</li></ul>
+    <div class="recommendation"><strong>Note:</strong> Add subheadings (H2-H6) for better structure.</div>
+    <h3>Word Count</h3>
+    <p>27 words in the main content.</p>
+    <div class="recommendation"><strong>Recommendation:</strong> Increase to at least 300 words.</div>
+</div>
+<div class="section">
+    <h2>3. Link Check</h2>
+    <table>
+        <tr><th>URL</th><th>Type</th></tr>
+        <tr><td><a href="https://iana.org/domains/example" target="_blank">https://iana.org/domains/example</a></td><td>External</td></tr>
+    </table>
+    <div class="recommendation"><strong>Observation:</strong> Add internal links.</div>
+</div>
+<div class="section">
+    <h2>4. Recommendations</h2>
+    <div class="recommendation"><h3>Critical Issues</h3><ol><li>Add a meta description (50-160 chars).</li><li>Increase content length.</li></ol></div>
+    <div class="recommendation"><h3>Improvement Opportunities</h3><ol><li>Add subheadings.</li><li>Add internal links.</li><li>Add visual content.</li></ol></div>
+</div>
+<div class="section">
+    <h2>5. Visual Representation</h2>
+    <p>No screenshots provided. Consider adding them for future audits.</p>
+</div>
+<footer><p>Generated automatically.</p></footer>
+<script>document.getElementById('date').textContent=new Date().toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'});</script>
+</body>
+</html>
